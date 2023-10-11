@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+  @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@200;400;700&display=swap");
+}
+
+body {
+  display: block;
+  background-color: rgb(224, 220, 220);
+  font-family: "Amatic SC", sans-serif;
+  text-align: center;
+}
+button {
+  background-color: rgb(210, 208, 127);
+  border-radius: 7px;
+  color: white;
+  text-align: center;
+}

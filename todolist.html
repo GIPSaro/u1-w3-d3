@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List</title>
+    <link rel="stylesheet" href="./assets:css/todolist.css" />
+  </head>
+  <body>
+    <main>
+      <h1>TO DO LIST</h1>
+      <form id="myForm">
+        <div>
+          <label for="listName">This is you list:</label>
+          <input
+            id="listName"
+            type="text"
+            placeholder="Add what you want"
+            required
+          />
+
+          <button id="buttonTask">Create List</button>
+        </div>
+        <div id="list">
+          <ul id="taskList"></ul>
+        </div>
+        <input
+          type="text"
+          id="newTask"
+          placeholder="Add new Activity"
+          required
+        />
+        <button id="buttonAdd">Add</button>
+      </form>
+    </main>
+    <script src="./js/todolist.js"></script>
+  </body>
+</html>
