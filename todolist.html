@@ -4,14 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets:css/todolist.css" />
   </head>
   <body>
     <main>
       <h1>TO DO LIST</h1>
       <form id="myForm">
-        <div>
-          <label for="listName">This is you list:</label>
+        <span>
+          <label for="listName">Add Your Task:</label>
           <input
             id="listName"
             type="text"
@@ -19,19 +27,11 @@
             required
           />
 
-          <button id="buttonTask">Create List</button>
-        </div>
+          <button id="buttonTask">Add</button>
+        </span>
         <div id="list">
           <ul id="taskList"></ul>
         </div>
-        <label for="newTask">You Activity:</label>
-        <input
-          type="text"
-          id="newTask"
-          placeholder="Add new Activity"
-          required
-        />
-        <button id="buttonAdd">Add</button>
       </form>
     </main>
     <script src="./js/todolist.js"></script>

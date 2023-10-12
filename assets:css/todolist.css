@@ -2,21 +2,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
-
-  @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@600&family=Open+Sans:wght@300&family=Poppins:wght@200;400;700&display=swap");
 }
 
 body {
   display: block;
   background-color: rgb(224, 220, 220);
-  font-family: "Amatic SC", sans-serif;
+  font-family: "Amatic Sc", sans-serif;
   text-align: center;
+  font-size: 2rem;
 }
 button {
-  background-color: rgb(210, 208, 127);
+  background-color: rgba(216, 215, 132, 0.658);
   border-radius: 7px;
   color: white;
   text-align: center;
+  font-family: "Amatic SC", sans-serif;
 }
 h1,
 h2,
@@ -34,4 +34,22 @@ form div {
   margin-top: 0.5rem;
   width: max-content;
   margin-inline: auto;
+}
+div {
+  margin: 10px;
+}
+span #listName {
+  text-align: center;
+  border-radius: 10px;
+  font-family: "Amatic SC", sans-serif;
+  width: 200px;
+  padding-top: 10px;
+  font-size: 1.2rem;
+}
+span {
+  background-color: orange;
+  padding: 35px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 10px;
 }

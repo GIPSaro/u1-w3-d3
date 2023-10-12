@@ -1,48 +1,41 @@
 window.onload = () => {
   const form = document.getElementById("myForm");
   const cancelButtom = document.querySelector(
-    "#buttomTask buttom[type='buttom']"
+    "#buttomArea buttom[type='buttom']"
   );
-};
-const form = document.getElementById("myForm");
-form.onsubmit = function (e) {
-  e.preventDefault();
-  const listName = document.getElementById("listName");
-  function createTaskList() {
-    if (listName.trim() === "") {
-      alert("IT'S EMPTY!!!!!");
-      return;
-    }
-  }
 
-  function createTaskList() {
-    if (listName.trim() === "") {
-      alert("IT'S EMPTY!!!!!");
-      return;
+  cancelButtom.onclick = function () {
+    const hasConfirmed = confirm("Are you sure? It's EMPTY");
+    if (hasConfirmed) {
+      form.reset();
     }
-  }
+  };
 
-  function addTask() {
-    const taskText = document.getElementById("newTask");
-    if (taskText.trim() === " ") {
-      altert("IT'S EMPTY!!");
-      return alert;
-    }
+  form.onsubmit = function (e) {
+    e.preventDefault();
 
+    const inputTask = document.getElementById("listName");
+    const addButtom = document.getElementById("addButtom");
     const taskList = document.getElementById("taskList");
-    const listItem = document.createElement("li");
-    listItem.innerHTML = taskText;
-    taskList.appendChild(listItem);
-    document.getElementById("newTask").value = "";
 
-    listItem.addEventListener("click", function () {
-      if (!listItem.classList.contains("completed")) {
-        listItem.classList.add("completed");
-      } else {
-        listItem.classList.remove("completed");
-      }
-    });
-    taskList.appendChild(listItem);
-    document.getElementById("newTask").value = "";
-  }
+    const main = document.getElementsByTagName("main")[0];
+    const activity = document.createElement("div");
+    activity.className = "listName";
+  };
 };
+
+/*const list1 = document.createElement("h3");
+list1.innerText = " "
+const list2 = document.createElement("h3");
+list2.innerText = " "
+const list3 = document.createElement("h3");
+list3.innerText = " "
+const list4 = document.createElement("h3");
+list4.innerText = ""
+const buttom = document.createElement("buttom")
+buttom.innerText= "DELETE"
+
+buttom.onclick= function (e){
+    const deletButtom = e.target
+    deletButtom.parentNote.remove()
+}*/
